@@ -1,7 +1,8 @@
 # go-boilerplate
 A starter project with Golang, Echo and Postgres.
 
-Project's goal
+> Project's goal
+
 Learn a new programming language (Go), with at least one framework (echo).
 Create a development environment using docker and vscode devcontainer.
 Develop an initial project that can be used as a basis for other projects.
