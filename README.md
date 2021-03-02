@@ -17,4 +17,9 @@ Generate a self-signed X.509 TLS certificate.
 go run $GOROOT/src/crypto/tls/generate_cert.go --host localhost
 ```
 
+Sharing Git credentials with your container
+https://code.visualstudio.com/docs/remote/containers#_sharing-git-credentials-with-your-container
+
+Caching your GitHub credentials in Git
+https://docs.github.com/en/github/using-git/caching-your-github-credentials-in-git
 
