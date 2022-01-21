@@ -1,11 +1,19 @@
-# Get the lastest golang base image
-FROM golang:latest
+# syntax=docker/dockerfile:1
 
-RUN mkdir /app
-
-ADD . /app
+# Alpine is chosen for its small footprint compared to Ubuntu
+# Example: FROM golang:1.17-alpine
+# FROM golang:1.17-stretch
+FROM golang:1.17
 
 WORKDIR /app
+
+# Download necessary Go modules
+COPY ./src/go.mod ./
+COPY ./src/go.sum ./
+
+RUN go mod download
+
+#COPY ./src/*.go ./
 
 EXPOSE 1323
 
@@ -13,4 +21,3 @@ EXPOSE 1323
 #RUN go build -o app/main .
 
 #CMD ["./app/main"]
-
