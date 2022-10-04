@@ -1,10 +1,10 @@
 module github.com/ggiox/go-boilerplate
 
-go 1.17
+go 1.19
 
 require (
-	github.com/labstack/echo/v4 v4.6.3
-	golang.org/x/crypto v0.0.0-20220112180741-5e0467b6c7ce
+	github.com/labstack/echo/v4 v4.9.0
+	golang.org/x/crypto v0.0.0-20220926161630-eccd6366d1be
 )
 
 require (
